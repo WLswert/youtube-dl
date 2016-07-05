@@ -20,7 +20,10 @@ from .adobetv import (
     AdobeTVVideoIE,
 )
 from .adultswim import AdultSwimIE
-from .aenetworks import AENetworksIE
+from .aenetworks import (
+    AENetworksIE,
+    HistoryTopicIE,
+)
 from .afreecatv import AfreecaTVIE
 from .aftonbladet import AftonbladetIE
 from .airmozilla import AirMozillaIE
@@ -168,6 +171,8 @@ from .crunchyroll import (
 )
 from .cspan import CSpanIE
 from .ctsnews import CtsNewsIE
+from .ctv import CTVIE
+from .ctvnews import CTVNewsIE
 from .cultureunplugged import CultureUnpluggedIE
 from .cwtv import CWTVIE
 from .dailymail import DailyMailIE
@@ -276,6 +281,7 @@ from .freespeech import FreespeechIE
 from .freevideo import FreeVideoIE
 from .funimation import FunimationIE
 from .funnyordie import FunnyOrDieIE
+from .fusion import FusionIE
 from .gameinformer import GameInformerIE
 from .gamekings import GamekingsIE
 from .gameone import (
@@ -320,6 +326,10 @@ from .hotnewhiphop import HotNewHipHopIE
 from .hotstar import HotStarIE
 from .howcast import HowcastIE
 from .howstuffworks import HowStuffWorksIE
+from .hrti import (
+    HRTiIE,
+    HRTiPlaylistIE,
+)
 from .huffpost import HuffPostIE
 from .hypem import HypemIE
 from .iconosquare import IconosquareIE
@@ -422,6 +432,7 @@ from .makerschannel import MakersChannelIE
 from .makertv import MakerTVIE
 from .matchtv import MatchTVIE
 from .mdr import MDRIE
+from .meta import METAIE
 from .metacafe import MetacafeIE
 from .metacritic import MetacriticIE
 from .mgoon import MgoonIE
@@ -522,6 +533,7 @@ from .nick import (
     NickDeIE,
 )
 from .niconico import NiconicoIE, NiconicoPlaylistIE
+from .ninecninemedia import NineCNineMediaIE
 from .ninegag import NineGagIE
 from .noco import NocoIE
 from .normalboots import NormalbootsIE
@@ -706,10 +718,12 @@ from .shahid import ShahidIE
 from .shared import SharedIE
 from .sharesix import ShareSixIE
 from .sina import SinaIE
+from .sixplay import SixPlayIE
 from .skynewsarabia import (
     SkyNewsArabiaIE,
     SkyNewsArabiaArticleIE,
 )
+from .skysports import SkySportsIE
 from .slideshare import SlideshareIE
 from .slutload import SlutloadIE
 from .smotri import (
@@ -891,6 +905,7 @@ from .udn import UDNEmbedIE
 from .digiteka import DigitekaIE
 from .unistra import UnistraIE
 from .urort import UrortIE
+from .urplay import URPlayIE
 from .usatoday import USATodayIE
 from .ustream import UstreamIE, UstreamChannelIE
 from .ustudio import (
@@ -1051,6 +1066,7 @@ from .youtube import (
     YoutubeSearchDateIE,
     YoutubeSearchIE,
     YoutubeSearchURLIE,
+    YoutubeSharedVideoIE,
     YoutubeShowIE,
     YoutubeSubscriptionsIE,
     YoutubeTruncatedIDIE,
